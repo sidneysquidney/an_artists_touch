@@ -1,0 +1,27 @@
+.button {
+  background-color: var(--aqua-blue);
+  color: white;
+  padding: 10px 50px;
+  border-radius: var(--border-radius);
+  border: 0px;
+  transition: var(--transition-time);
+}
+
+.button:hover {
+  color: var(--dark-blue);
+  background-color: var(--turquoise);
+}
+
+.nav-button {
+  border: 1px solid var(--aqua-blue);
+  background-color: transparent;
+  color: var(--aqua-blue);
+  padding: 10px 50px;
+  border-radius: var(--border-radius);
+  transition: var(--transition-time);
+}
+
+.nav-button:hover {
+  color: white;
+  background-color: var(--aqua-blue);
+}

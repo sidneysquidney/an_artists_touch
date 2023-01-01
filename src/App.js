@@ -1,24 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import ContactPage from "./componenets/pages/contact/ContactPage";
+import HomePage from "./componenets/pages/home/HomePage";
+import MusiciansPage from "./componenets/pages/musicians/MusiciansPage";
+import QuotePage from "./componenets/pages/quote/QuotePage";
+import Footer from "./componenets/other/footer/Footer";
+import Learning2 from "./learning/Learning2";
+import Learning3 from "./learning/Learning3";
+import Learning4 from "./learning/Learning4";
+
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
+  let component;
+  switch (window.location.pathname) {
+    case "/home":
+      component = <HomePage />;
+      break;
+    case "/musicians":
+      component = <MusiciansPage />;
+      break;
+    case "/contact":
+      component = <ContactPage />;
+      break;
+    case "/quote":
+      component = <QuotePage />;
+      break;
+  }
+  if (!component) {
+    component = <HomePage />;
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="" element={<HomePage />}></Route>
+          <Route path="/home" element={<HomePage />}></Route>
+          <Route path="/musicians" element={<MusiciansPage />}></Route>
+          <Route path="/quote" element={<QuotePage />}></Route>
+          <Route path="/contact" element={<ContactPage />}></Route>
+        </Routes>
+        {/* other way of linking pages */}
+        {/* {component} */}
+        {/* <ContactPage /> */}
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
