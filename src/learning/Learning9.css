@@ -9,14 +9,14 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 
 .learning-container {
   width: 800px;
   /* height: 400px; */
   position: relative;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .learning-testimonial {
@@ -36,16 +36,16 @@
   width: 800px;
   /* height: 400px; */
   position: relative;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
-.learning-header {
+/* .learning-header {
   border: 1px solid green;
-}
+} */
 
 .learning-slider-dots {
   display: flex;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 
 .learning-slider-dots p {
@@ -54,4 +54,15 @@
 
 .learning-text {
   text-align: center;
+}
+
+.learning-button {
+  color: var(--dark-blue);
+  border: none;
+  background-color: transparent;
+  transition: var(--transition-time);
+}
+
+.learning-button:hover {
+  color: var(--aqua-blue);
 }

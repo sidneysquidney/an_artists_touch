@@ -3,7 +3,7 @@
 // change class names
 // do overal layout
 // specific styling
-//
+// make code cleaner with callbacks and seperate components
 
 import { useState } from "react";
 import { useEffect } from "react";
@@ -48,14 +48,15 @@ function Learning9() {
 
   return (
     <div className="learning-founder-container-full">
-      <h2 className="learning-header">learning9 </h2>
+      <h2 className="learning-header alternate-section-title">learning9 </h2>
       <div className="learning-and-buttons-container">
         <button
+          className="learning-button"
           onClick={() => {
             buttonClick(-1);
           }}
         >
-          left
+          &#10094;
         </button>
         <div className="learning-container">
           <div className="learning-testimonial">
@@ -63,7 +64,7 @@ function Learning9() {
               {quotes.map((quote, index) => {
                 return (
                   <div className="learning-slide-col" key={index}>
-                    <p className="learning-text">{quote}</p>
+                    <p className="learning-text">"{quote}"</p>
                   </div>
                 );
               })}
@@ -71,11 +72,12 @@ function Learning9() {
           </div>
         </div>
         <button
+          className="learning-button"
           onClick={() => {
             buttonClick(1);
           }}
         >
-          right
+          &#10095;
         </button>
       </div>
 
