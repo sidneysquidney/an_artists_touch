@@ -227,11 +227,15 @@ a {
 
 /* section containers */
 
-.section-container {
+.join-us-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 100px 200px;
+}
+
+.section-container {
+  padding: 100px;
 }
 
 /* join us section */
@@ -262,4 +266,9 @@ a {
 .services-image-container img {
   height: 100%;
   width: 100%;
+}
+
+.rando {
+  /* color: pink; */
+  font-size: 100px;
 }

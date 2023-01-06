@@ -9,8 +9,21 @@ import Learning3 from "./learning/Learning3";
 import Learning4 from "./learning/Learning4";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Learning5 from "./learning/Learning5";
+import Learning6 from "./learning/Learning6";
+import Learning7 from "./learning/Learning7";
+
+const learning = true;
 
 function App() {
+  if (learning) {
+    return <Learning7 />;
+  } else {
+    return <Windows />;
+  }
+}
+
+function Windows() {
   let component;
   switch (window.location.pathname) {
     case "/home":

@@ -10,6 +10,7 @@ export default function FounderQuotes() {
     "quote2",
     "quote3",
     "quote4",
+    "save an artist today",
   ];
 
   const goToSlide = (n) => {

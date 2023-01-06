@@ -1,0 +1,39 @@
+.myclass_enter {
+  transform: translateX(100%);
+  color: red;
+}
+.myclass_enter_active {
+  transform: translate(0%);
+  transition: transform 500ms ease-in-out;
+}
+.myclass_exit {
+  transform: translate(0%, -100%);
+}
+.myclass_exit_active {
+  transform: translate(-100%, -100%);
+  transition: transform 500ms ease-in-out;
+}
+
+.text,
+text2 {
+  text-align: center;
+}
+
+.slide_enter {
+  transform: translateX(100%);
+}
+.slide_enter_active {
+  transform: translateX(0%);
+  transition: transform 500ms ease-in-out;
+}
+.slide_exit {
+  transform: translate(0%, -100%);
+}
+.slide_exit_active {
+  transform: translate(-100%, -100%);
+  transition: transform 500ms ease-in-out;
+}
+
+.sidney {
+  color: purple;
+}

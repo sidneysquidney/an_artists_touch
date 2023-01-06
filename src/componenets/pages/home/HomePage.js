@@ -1,6 +1,8 @@
 import Line from "../../other/line/Line";
 import About from "./about/About";
 import FounderQuotes from "./founder-quotes/FounderQuotes";
+import FounderQuotes2 from "./founder-quotes/FounderQuotes2";
+import FounderQuotes3 from "./founder-quotes/FounderQuotes3";
 import Header from "./header/Header";
 import HowItWorks from "./how-it-works/HowItWorks";
 import JoinUs from "./join-us/JoinUs";
@@ -14,7 +16,9 @@ export default function HomePage() {
       {console.log(window.location.pathname)}
       <Header />
       <Line />
-      <FounderQuotes />
+      {/* <FounderQuotes /> */}
+      <FounderQuotes2 />
+      {/* <FounderQuotes3 /> */}
       <Line />
       <About />
       <Line />
