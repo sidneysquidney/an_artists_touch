@@ -12,12 +12,13 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Learning5 from "./learning/Learning5";
 import Learning6 from "./learning/Learning6";
 import Learning7 from "./learning/Learning7";
+import Learning8 from "./learning/Learning8";
 
 const learning = true;
 
 function App() {
   if (learning) {
-    return <Learning7 />;
+    return <Learning8 />;
   } else {
     return <Windows />;
   }

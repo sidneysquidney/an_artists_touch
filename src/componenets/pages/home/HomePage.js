@@ -17,8 +17,8 @@ export default function HomePage() {
       <Header />
       <Line />
       {/* <FounderQuotes /> */}
-      <FounderQuotes2 />
-      {/* <FounderQuotes3 /> */}
+      {/* <FounderQuotes2 /> */}
+      <FounderQuotes3 />
       <Line />
       <About />
       <Line />
