@@ -25,6 +25,8 @@ function Learning8() {
     return dot;
   };
 
+  //   some comment
+
   const slide = document.getElementById("slide");
 
   const buttonClick = (n) => {
