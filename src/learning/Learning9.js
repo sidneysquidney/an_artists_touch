@@ -1,11 +1,16 @@
 // video for css slide transition - do not change
 
+// change class names
+// do overal layout
+// specific styling
+//
+
 import { useState } from "react";
 import { useEffect } from "react";
 
-import "./Learning8.css";
+import "./Learning9.css";
 
-function Learning8() {
+function Learning9() {
   const [index, setIndex] = useState(0);
 
   const quotes = [
@@ -16,8 +21,8 @@ function Learning8() {
   ];
 
   const updateSliderDots = (index, previousIndex) => {
-    const indexId = "8slider-dot-" + index;
-    const previousIndexId = "8slider-dot-" + previousIndex;
+    const indexId = "learning-slider-dot-" + index;
+    const previousIndexId = "learning-slider-dot-" + previousIndex;
     let dot = document.getElementById(indexId);
     let previousDot = document.getElementById(previousIndexId);
     dot.style.color = "#3d77ea";
@@ -25,9 +30,8 @@ function Learning8() {
     return dot;
   };
 
-  const slide = document.getElementById("slide");
-
   const buttonClick = (n) => {
+    const slide = document.getElementById("learning-slide");
     let i = index;
     i += n;
     if (i >= 0 && i < quotes.length) {
@@ -36,21 +40,16 @@ function Learning8() {
       slide.style.transform = "translateX(-" + i * 800 + "px)";
     }
   };
+
+  useEffect(() => {
+    let startDot = document.getElementById("learning-slider-dot-0");
+    startDot.style.color = "var(--aqua-blue)";
+  }, []);
+
   return (
-    <div>
-      <h1>straight from video</h1>
-      <div className="container">
-        <div className="testimonial">
-          <div className="slide-row" id="slide">
-            {quotes.map((quote) => {
-              return (
-                <div className="slide-col">
-                  <p>{quote}</p>
-                </div>
-              );
-            })}
-          </div>
-        </div>
+    <div className="learning-founder-container-full">
+      <h2 className="learning-header">learning9 </h2>
+      <div className="learning-and-buttons-container">
         <button
           onClick={() => {
             buttonClick(-1);
@@ -58,6 +57,19 @@ function Learning8() {
         >
           left
         </button>
+        <div className="learning-container">
+          <div className="learning-testimonial">
+            <div className="learning-slide-row" id="learning-slide">
+              {quotes.map((quote, index) => {
+                return (
+                  <div className="learning-slide-col" key={index}>
+                    <p className="learning-text">{quote}</p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
         <button
           onClick={() => {
             buttonClick(1);
@@ -67,10 +79,10 @@ function Learning8() {
         </button>
       </div>
 
-      <div className="8slider-dots">
+      <div className="learning-slider-dots">
         {quotes.map((quote, index) => {
           return (
-            <p id={"8slider-dot-" + index} key={index}>
+            <p id={"learning-slider-dot-" + index} key={index}>
               ●
             </p>
           );
@@ -80,4 +92,4 @@ function Learning8() {
   );
 }
 
-export default Learning8;
+export default Learning9;

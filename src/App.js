@@ -13,12 +13,13 @@ import Learning5 from "./learning/Learning5";
 import Learning6 from "./learning/Learning6";
 import Learning7 from "./learning/Learning7";
 import Learning8 from "./learning/Learning8";
+import Learning9 from "./learning/Learning9";
 
 const learning = true;
 
 function App() {
   if (learning) {
-    return <Learning8 />;
+    return <Learning9 />;
   } else {
     return <Windows />;
   }
