@@ -1,4 +1,4 @@
-// video for css slide transition - do not change
+// slider working in full with edits - do not change
 
 // change class names
 // do overal layout
@@ -18,6 +18,7 @@ function Learning9() {
     "quote2",
     "quote3",
     "quote4a sdfasdf fasdfas dfafd adfsasdf asdf asdf adsf fads fdsaf adf af asdf asdf asdf ads fasdf asdf asd fasd fads fasd dfasf dasf asd fas",
+    "quote 5",
   ];
 
   const updateSliderDots = (index, previousIndex) => {
@@ -44,53 +45,90 @@ function Learning9() {
   useEffect(() => {
     let startDot = document.getElementById("learning-slider-dot-0");
     startDot.style.color = "var(--aqua-blue)";
+    let slideRow = document.getElementsByClassName("learning-slide-row")[0];
+    slideRow.style.width = 800 * quotes.length + "px";
   }, []);
 
   return (
     <div className="learning-founder-container-full">
       <h2 className="learning-header alternate-section-title">learning9 </h2>
-      <div className="learning-and-buttons-container">
-        <button
-          className="learning-button"
-          onClick={() => {
-            buttonClick(-1);
-          }}
-        >
-          &#10094;
-        </button>
-        <div className="learning-container">
-          <div className="learning-testimonial">
-            <div className="learning-slide-row" id="learning-slide">
-              {quotes.map((quote, index) => {
-                return (
-                  <div className="learning-slide-col" key={index}>
-                    <p className="learning-text">"{quote}"</p>
-                  </div>
-                );
-              })}
-            </div>
+      <Slider quotes={quotes} buttonClick={buttonClick} />
+      <SliderDots quoteCount={quotes.length} />
+    </div>
+  );
+}
+
+function SliderDots(props) {
+  return (
+    <div className="learning-slider-dots">
+      {[...Array(props.quoteCount).keys()].map((index) => {
+        return (
+          <p id={"learning-slider-dot-" + index} key={index}>
+            ●
+          </p>
+        );
+      })}
+    </div>
+  );
+}
+
+function Slider(props) {
+  const buttonClick = (n) => {
+    props.buttonClick(n);
+  };
+
+  return (
+    <div className="learning-and-buttons-container">
+      <LeftArrow buttonClick={buttonClick} />
+      <div className="learning-container">
+        <div className="learning-testimonial">
+          <div className="learning-slide-row" id="learning-slide">
+            {props.quotes.map((quote, index) => {
+              return (
+                <div className="learning-slide-col" key={index}>
+                  <p className="learning-text">"{quote}"</p>
+                </div>
+              );
+            })}
           </div>
         </div>
-        <button
-          className="learning-button"
-          onClick={() => {
-            buttonClick(1);
-          }}
-        >
-          &#10095;
-        </button>
       </div>
-
-      <div className="learning-slider-dots">
-        {quotes.map((quote, index) => {
-          return (
-            <p id={"learning-slider-dot-" + index} key={index}>
-              ●
-            </p>
-          );
-        })}
-      </div>
+      <RightArrow buttonClick={buttonClick} />
     </div>
+  );
+}
+
+function RightArrow(props) {
+  const buttonClick = (n) => {
+    props.buttonClick(n);
+  };
+
+  return (
+    <button
+      className="learning-button"
+      onClick={() => {
+        buttonClick(1);
+      }}
+    >
+      &#10095;
+    </button>
+  );
+}
+
+function LeftArrow(props) {
+  const buttonClick = (n) => {
+    props.buttonClick(n);
+  };
+
+  return (
+    <button
+      className="learning-button"
+      onClick={() => {
+        buttonClick(-1);
+      }}
+    >
+      &#10094;
+    </button>
   );
 }
 

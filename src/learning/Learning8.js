@@ -16,8 +16,8 @@ function Learning8() {
   ];
 
   const updateSliderDots = (index, previousIndex) => {
-    const indexId = "8slider-dot-" + index;
-    const previousIndexId = "8slider-dot-" + previousIndex;
+    const indexId = "bslider-dot-" + index;
+    const previousIndexId = "bslider-dot-" + previousIndex;
     let dot = document.getElementById(indexId);
     let previousDot = document.getElementById(previousIndexId);
     dot.style.color = "#3d77ea";
@@ -25,7 +25,7 @@ function Learning8() {
     return dot;
   };
 
-  const slide = document.getElementById("slide");
+  const slide = document.getElementById("bslide");
 
   const buttonClick = (n) => {
     let i = index;
@@ -39,12 +39,12 @@ function Learning8() {
   return (
     <div>
       <h1>straight from video</h1>
-      <div className="container">
-        <div className="testimonial">
-          <div className="slide-row" id="slide">
+      <div className="bcontainer">
+        <div className="btestimonial">
+          <div className="bslide-row" id="bslide">
             {quotes.map((quote) => {
               return (
-                <div className="slide-col">
+                <div className="bslide-col">
                   <p>{quote}</p>
                 </div>
               );
@@ -67,10 +67,10 @@ function Learning8() {
         </button>
       </div>
 
-      <div className="8slider-dots">
+      <div className="bslider-dots">
         {quotes.map((quote, index) => {
           return (
-            <p id={"8slider-dot-" + index} key={index}>
+            <p id={"bslider-dot-" + index} key={index}>
               ●
             </p>
           );

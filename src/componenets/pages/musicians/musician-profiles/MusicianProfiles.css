@@ -1,0 +1,13 @@
+.profile-picture {
+  width: 400px;
+  height: 600px;
+}
+
+.profile-container {
+  display: flex;
+}
+
+.profile-picture-container,
+.profile-text-container {
+  width: 50%;
+}

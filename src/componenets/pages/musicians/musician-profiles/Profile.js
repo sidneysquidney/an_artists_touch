@@ -1,18 +1,48 @@
-export default function Profile() {
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaYoutubeSquare } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaSpotify } from "react-icons/fa";
+
+export default function Profile(props) {
+  const artist = props.artist;
+
   return (
-    <div>
-      <h2>Harold Gordon-Smith</h2>
-      <p>
-        Born in London, 1994. He began as a self-taught guitarist through to his
-        undergraduate degree where he studied under Graham Devine. Harold is now
-        an award-winning classical guitarist and has performed in master classes
-        with many of the world’s top classical guitarists - David Russel, Marcin
-        Dylla and Roberto Aussel. From Trinity Laban, Harold was awarded his
-        master’s degree with Distinction. His career has taken him performing
-        through Wigmore hall, Queens house and across Europe, from Vienna to
-        Portugal. Available for guitar lessons and concerts.
-      </p>
-      <a className="profile-website">https://www.haroldgordonsmith.com/</a>
+    <div className="profile-container">
+      <div className="profile-picture-container">
+        <img src={artist.picture} className="profile-picture"></img>
+      </div>
+      <div className="profile-text-container">
+        <h2>{artist.name}</h2>
+        <p>{artist.about}</p>
+
+        <p>{artist.availability()}</p>
+        <a className="profile-website" href={artist.website}>
+          {artist.website}
+        </a>
+        <div>
+          {artist.social_media.facebook ? (
+            <a href={artist.social_media.facebook}>
+              <FaFacebookSquare className="profile-icon" />
+            </a>
+          ) : null}
+          {artist.social_media.instagram ? (
+            <a href={artist.social_media.instagram}>
+              <FaInstagram className="profile-icon" />
+            </a>
+          ) : null}
+          {artist.social_media.spotify ? (
+            <a href={artist.social_media.spotify}>
+              <FaSpotify className="profile-icon" />
+            </a>
+          ) : null}
+          {artist.social_media.youtube ? (
+            <a href={artist.social_media.youtube}>
+              <FaYoutubeSquare className="profile-icon" />
+            </a>
+          ) : null}
+        </div>
+      </div>
     </div>
   );
 }

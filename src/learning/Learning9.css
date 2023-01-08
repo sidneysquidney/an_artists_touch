@@ -27,7 +27,7 @@
 
 .learning-slide-row {
   display: flex;
-  width: 3200px;
+  /* width: 4000px; */
   /* border: 1px solid green; */
   transition: 0.5s;
 }

@@ -18,7 +18,7 @@ import Learning9 from "./learning/Learning9";
 const learning = true;
 
 function App() {
-  if (learning) {
+  if (!learning) {
     return <Learning9 />;
   } else {
     return <Windows />;

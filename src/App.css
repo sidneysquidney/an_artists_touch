@@ -155,8 +155,14 @@ h4 {
   color: var(--turquoise);
 }
 
-.text-white {
+.text-white,
+.profile-icon {
   color: white;
+  transition: var(--transition-time);
+}
+
+.profile-icon:hover {
+  color: var(--turquoise);
 }
 
 .bg-dark-blue h2,
@@ -170,7 +176,7 @@ h4 {
 }
 
 .profile-website {
-  color: white;
+  color: var(--aqua-blue);
   transition: var(--transition-time);
 }
 
@@ -187,6 +193,10 @@ h4 {
 }
 
 /* text style */
+
+.text-center {
+  text-align: center;
+}
 
 .text-italic {
   font-style: italic;
@@ -266,9 +276,4 @@ a {
 .services-image-container img {
   height: 100%;
   width: 100%;
-}
-
-.rando {
-  /* color: pink; */
-  font-size: 100px;
 }
