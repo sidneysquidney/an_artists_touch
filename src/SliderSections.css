@@ -1,0 +1,99 @@
+.founder-container-full,
+.review-container-full,
+.musician-profiles-container-full {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slide-buttons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /* border: 1px solid green; */
+}
+
+.slide-container {
+  width: 800px;
+  /* height: 400px; */
+  position: relative;
+  /* border: 1px solid red; */
+}
+
+.slide-section {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.quote-slide-row,
+.review-slide-row,
+.musician-profiles-slide-row {
+  display: flex;
+  /* width: 4000px; */
+  /* border: 1px solid green; */
+  transition: 0.5s;
+}
+
+.slide-col {
+  width: 800px;
+  /* height: 400px; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+}
+
+.slide-dots {
+  display: flex;
+  /* border: 1px solid green; */
+}
+
+.slide-dots p {
+  margin: 0px 3px;
+  transition: var(--transition-time);
+}
+
+.quote-slide-button,
+.review-slide-button {
+  color: var(--dark-blue);
+  border: none;
+  background-color: transparent;
+  transition: var(--transition-time);
+}
+
+.musician-profiles-slide-button {
+  color: white;
+  border: none;
+  background-color: transparent;
+  transition: var(--transition-time);
+}
+
+.musician-profiles-slide-button:hover {
+  color: var(--turquoise);
+}
+
+.quote-slide-button:hover {
+  color: var(--aqua-blue);
+}
+
+.review-slide-button:hover {
+  color: white;
+}
+
+/* musician profiles */
+
+.profile-picture {
+  width: 400px;
+  height: 600px;
+}
+
+.profile-container {
+  display: flex;
+}
+
+.profile-picture-container,
+.profile-text-container {
+  width: 50%;
+}

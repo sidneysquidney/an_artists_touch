@@ -1,4 +1,5 @@
 import "./App.css";
+import "./SliderSections.css";
 import ContactPage from "./componenets/pages/contact/ContactPage";
 import HomePage from "./componenets/pages/home/HomePage";
 import MusiciansPage from "./componenets/pages/musicians/MusiciansPage";
@@ -14,12 +15,14 @@ import Learning6 from "./learning/Learning6";
 import Learning7 from "./learning/Learning7";
 import Learning8 from "./learning/Learning8";
 import Learning9 from "./learning/Learning9";
+import { AudioLearning } from "./learning/AudioLearning";
+import AudioApp from "./learning/audio/AudioApp";
 
 const learning = true;
 
 function App() {
-  if (!learning) {
-    return <Learning9 />;
+  if (learning) {
+    return <AudioApp />;
   } else {
     return <Windows />;
   }

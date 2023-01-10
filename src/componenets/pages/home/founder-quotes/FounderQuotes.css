@@ -1,5 +1,8 @@
-.founder-container-full,
-.review-container-full {
+/* css moved to SliderSections.css in src */
+
+/* .founder-container-full,
+.review-container-full,
+.musician-profiles-container-full {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,14 +13,11 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  /* border: 1px solid green; */
 }
 
 .slide-container {
   width: 800px;
-  /* height: 400px; */
   position: relative;
-  /* border: 1px solid red; */
 }
 
 .slide-section {
@@ -27,25 +27,25 @@
 }
 
 .quote-slide-row,
-.review-slide-row {
+.review-slide-row,
+.musician-profiles-slide-row {
   display: flex;
-  /* width: 4000px; */
-  /* border: 1px solid green; */
+
   transition: 0.5s;
 }
 
 .slide-col {
   width: 800px;
-  /* height: 400px; */
+  
   position: relative;
   display: flex;
   flex-direction: column;
-  /* border: 1px solid red; */
+  
 }
 
 .slide-dots {
   display: flex;
-  /* border: 1px solid green; */
+  
 }
 
 .slide-dots p {
@@ -61,10 +61,21 @@
   transition: var(--transition-time);
 }
 
+.musician-profiles-slide-button {
+  color: white;
+  border: none;
+  background-color: transparent;
+  transition: var(--transition-time);
+}
+
+.musician-profiles-slide-button:hover {
+  color: var(--turquoise);
+}
+
 .quote-slide-button:hover {
   color: var(--aqua-blue);
 }
 
 .review-slide-button:hover {
   color: white;
-}
+} */
