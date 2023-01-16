@@ -1,3 +1,5 @@
+import AudioApp2 from "../../../learning/audio2/AudioApp2";
+import Footer from "../../other/footer/Footer";
 import Album from "./album/Album";
 import Concerts from "./concerts/Concerts";
 import MusiciansHeader from "./header/MusiciansHeader";
@@ -9,7 +11,9 @@ export default function MusiciansPage() {
       <MusiciansHeader />
       <MusicianProfiles />
       <Album />
+      {/* <AudioApp2 /> */}
       <Concerts />
+      <Footer musicPage={false} />
     </div>
   );
 }

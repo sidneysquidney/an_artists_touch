@@ -1,3 +1,4 @@
+import Footer from "../../other/footer/Footer";
 import Line from "../../other/line/Line";
 import About from "./about/About";
 import FounderQuotes from "./founder-quotes/FounderQuotes";
@@ -23,6 +24,7 @@ export default function HomePage() {
       <Services />
       <JoinUs />
       <QuoteSection />
+      <Footer />
     </div>
   );
 }

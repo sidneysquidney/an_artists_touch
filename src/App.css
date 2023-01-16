@@ -122,6 +122,23 @@ h4 {
   font-weight: 600;
 }
 
+.album-header-text,
+.album-artist-text {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.album-title-text {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.album-number-text,
+.album-duration-text {
+  font-size: 18px;
+  font-weight: 400;
+}
+
 .footer-list li,
 .quote-disclaimer {
   font-size: 12px;
@@ -149,6 +166,10 @@ h4 {
 .text-turquoise {
   color: var(--turquoise2);
   transition: var(--transition-time);
+}
+
+.text-aqua-blue {
+  color: var(--aqua-blue);
 }
 
 .text-turquoise:hover {

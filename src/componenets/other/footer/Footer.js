@@ -1,11 +1,16 @@
+import AudioApp3 from "../../../learning/audio3/AudioApp3";
 import ContactLocation from "../contact-location/ContactLocation";
 import Line from "../line/Line";
+import FooterAudio from "./audio2/FooterAudio";
 import "./Footer.css";
 
-export default function Footer() {
+export default function Footer(props) {
   return (
     <footer>
-      <div className="footer-music-container"></div>
+      <div className="footer-music-container">
+        {props.musicPage ? <p>music page</p> : <AudioApp3 />}
+        {/* <FooterAudio /> */}
+      </div>
       <Line />
       <div className="footer-info-container">
         <div className="footer-info1">

@@ -17,12 +17,18 @@ import Learning8 from "./learning/Learning8";
 import Learning9 from "./learning/Learning9";
 import { AudioLearning } from "./learning/AudioLearning";
 import AudioApp from "./learning/audio/AudioApp";
+import AudioApp2 from "./learning/audio2/AudioApp2";
+import AudioApp3 from "./learning/audio3/AudioApp3";
+import Audio4 from "./learning/audio3/Audio4";
 
 const learning = true;
 
 function App() {
-  if (learning) {
-    return <AudioApp />;
+  if (!learning) {
+    // return <AudioApp2 />;
+    // return <AudioApp />;
+    // return <AudioApp3 />;
+    return <Audio4 />;
   } else {
     return <Windows />;
   }
@@ -61,7 +67,7 @@ function Windows() {
         {/* other way of linking pages */}
         {/* {component} */}
         {/* <ContactPage /> */}
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </Router>
   );
