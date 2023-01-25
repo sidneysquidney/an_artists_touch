@@ -1,3 +1,9 @@
 .musician-profiles-container-full {
   padding: 100px 100px;
 }
+
+@media only screen and (max-width: 1024px) {
+  .musician-profiles-container-full {
+    padding: 40px 25px;
+  }
+}

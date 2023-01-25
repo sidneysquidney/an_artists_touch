@@ -7,11 +7,15 @@
 
 import { useState } from "react";
 import { useEffect } from "react";
+import { useRef } from "react";
 
 import "./FounderQuotes.css";
 
 function FounderQuotes() {
   const [index, setIndex] = useState(0);
+
+  const windowSize = useRef([window.innerWidth, window.innerHeight]);
+  const windowWidth = windowSize.current[0];
 
   const quotes = [
     "They say eyes are the windows to the soul. That means windows are the eyes of the house... and who wants dirt in their eyes!",
@@ -20,6 +24,16 @@ function FounderQuotes() {
     "In the universe, there are things that are known, and things that are unknown, and in between, there are windows.",
     "Look outside. If you are distressed by something there, the pain is not due to the thing itself, but to your perception of it; and this you have the power to revoke at any moment, by cleaning your windows.",
   ];
+
+  const sliderWidth = () => {
+    if (windowWidth > 1024) {
+      return 800;
+    } else if (windowWidth < 600) {
+      return 500;
+    } else {
+      return 250;
+    }
+  };
 
   const updateSliderDots = (index, previousIndex) => {
     const indexId = "quote-slide-dot-" + index;
@@ -38,7 +52,9 @@ function FounderQuotes() {
     if (i >= 0 && i < quotes.length) {
       updateSliderDots(i, index);
       setIndex(i);
+      // changed
       slide.style.transform = "translateX(-" + i * 800 + "px)";
+      console.log(sliderWidth());
     }
   };
 

@@ -11,14 +11,12 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  /* border: 1px solid green; */
 }
 
+/* changed */
 .slide-container {
-  width: 800px;
-  /* height: 400px; */
+  width: var(--slider-width-large);
   position: relative;
-  /* border: 1px solid red; */
 }
 
 .slide-section {
@@ -31,23 +29,19 @@
 .review-slide-row,
 .musician-profiles-slide-row {
   display: flex;
-  /* width: 4000px; */
-  /* border: 1px solid green; */
   transition: 0.5s;
 }
 
+/* changed */
 .slide-col {
-  width: 800px;
-  /* height: 400px; */
+  width: var(--slider-width-large);
   position: relative;
   display: flex;
   flex-direction: column;
-  /* border: 1px solid red; */
 }
 
 .slide-dots {
   display: flex;
-  /* border: 1px solid green; */
 }
 
 .slide-dots p {
@@ -84,6 +78,7 @@
 
 /* musician profiles */
 
+/* needs changing as goes.. */
 .profile-picture {
   width: 320px;
   height: 490px;
@@ -115,3 +110,33 @@
   margin-right: 10px;
   margin-top: 10px;
 }
+
+/* lazy version  */
+
+@media only screen and (max-width: 950px) {
+  .musician-profiles-container-full,
+  .founder-container-full,
+  .review-container-full {
+    display: none;
+  }
+}
+/* 
+@media only screen and (max-width: 1024px) {
+  .slide-container {
+    width: var(--slider-width-medium);
+  }
+
+  .slide-col {
+    width: var(--slider-width-medium);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .slide-container {
+    width: var(--slider-width-small);
+  }
+
+  .slide-col {
+    width: var(--slider-width-small);
+  }
+} */
