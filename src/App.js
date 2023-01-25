@@ -5,33 +5,13 @@ import HomePage from "./componenets/pages/home/HomePage";
 import MusiciansPage from "./componenets/pages/musicians/MusiciansPage";
 import QuotePage from "./componenets/pages/quote/QuotePage";
 import Footer from "./componenets/other/footer/Footer";
-import Learning2 from "./learning/Learning2";
-import Learning3 from "./learning/Learning3";
-import Learning4 from "./learning/Learning4";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Learning5 from "./learning/Learning5";
-import Learning6 from "./learning/Learning6";
-import Learning7 from "./learning/Learning7";
-import Learning8 from "./learning/Learning8";
-import Learning9 from "./learning/Learning9";
-import { AudioLearning } from "./learning/AudioLearning";
-import AudioApp from "./learning/audio/AudioApp";
-import AudioApp2 from "./learning/audio2/AudioApp2";
-import AudioApp3 from "./learning/audio3/AudioApp3";
-import Audio4 from "./learning/audio3/Audio4";
 
 const learning = true;
 
 function App() {
-  if (!learning) {
-    // return <AudioApp2 />;
-    // return <AudioApp />;
-    // return <AudioApp3 />;
-    return <Audio4 />;
-  } else {
-    return <Windows />;
-  }
+  return <Windows />;
 }
 
 function Windows() {

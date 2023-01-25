@@ -8,8 +8,8 @@ import { FaQuoteRight } from "react-icons/fa";
 function Step(props) {
   return (
     <div className="step-row">
-      <div className="step-number-contianer">
-        <h3>{props.index}</h3>
+      <div className="step-number-container">
+        <h3 className="step-number">{props.index}</h3>
       </div>
       <div className="step-title-container">
         {props.icon}

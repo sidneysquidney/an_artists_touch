@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { useEffect } from "react";
 
+import "./Reviews.css";
+import reviews_image from "../../../../assets/reviews.png";
+
 function Reviews() {
   const [index, setIndex] = useState(0);
 
@@ -44,7 +47,7 @@ function Reviews() {
 
   return (
     <div className="review-container-full bg-turquoise">
-      <h2>Reviews</h2>
+      <img src={reviews_image} className="reviews-image"></img>
       <Slider reviews={reviews} buttonClick={buttonClick} />
       <SliderDots reviewCount={reviews.length} />
     </div>
@@ -71,7 +74,7 @@ function Slider(props) {
   };
 
   return (
-    <div className="slide-buttons-container">
+    <div className="slide-buttons-container section-container">
       <LeftArrow buttonClick={buttonClick} />
       <div className="slide-container">
         <div className="slide-section">
@@ -79,8 +82,8 @@ function Slider(props) {
             {props.reviews.map((review, index) => {
               return (
                 <div className="slide-col" key={index}>
-                  <p className="text-center review-text">"{review.quote}"</p>
-                  <small className="review-author text-white text-center">
+                  <p className=" review-text">"{review.quote}"</p>
+                  <small className="review-author text-white">
                     {review.author}
                   </small>
                 </div>

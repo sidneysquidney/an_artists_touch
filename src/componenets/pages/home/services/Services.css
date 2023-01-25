@@ -1,0 +1,35 @@
+.services-container {
+  /* padding: 40px 100px; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services-one {
+  /* flex: 1; */
+  width: 40%;
+  padding: 60px 100px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .services-one {
+    padding: 40px 25px;
+  }
+}
+
+.services-one h2 {
+  margin: 0;
+}
+
+.services-two {
+  /* flex: 2; */
+  width: 60%;
+  background-image: url("../../../../assets/guitar_window2.jpg");
+  background-size: cover;
+}
+
+@media only screen and (max-width: 1024px) {
+  .services-one,
+  .services-two {
+    width: 100%;
+  }
+}

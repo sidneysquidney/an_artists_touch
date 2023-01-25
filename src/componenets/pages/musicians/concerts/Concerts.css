@@ -1,0 +1,27 @@
+.concerts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 100px;
+}
+
+.concerts-container svg {
+  width: 25px;
+  height: 25px;
+  color: var(--dark-blue);
+  margin-bottom: 20px;
+}
+
+.concerts-container h2 {
+  margin: 0;
+}
+
+.concerts-list li {
+  text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .concerts-container {
+    padding: 40px 25px;
+  }
+}

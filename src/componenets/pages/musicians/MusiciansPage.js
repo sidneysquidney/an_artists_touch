@@ -1,4 +1,3 @@
-import AudioApp2 from "../../../learning/audio2/AudioApp2";
 import Footer from "../../other/footer/Footer";
 import Album from "./album/Album";
 import Concerts from "./concerts/Concerts";
@@ -13,7 +12,7 @@ export default function MusiciansPage() {
       <Album />
       {/* <AudioApp2 /> */}
       <Concerts />
-      <Footer musicPage={false} />
+      <Footer musicPage={true} />
     </div>
   );
 }

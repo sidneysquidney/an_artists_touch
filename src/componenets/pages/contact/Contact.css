@@ -6,6 +6,13 @@
   padding-left: 0;
 }
 
-/* .contact-header li {
-  list-style-type: none;
-} */
+.contact-header li a,
+.contact-header li p {
+  display: inline;
+}
+
+@media only screen and (max-width: 1024px) {
+  .contact-header {
+    padding: 10px 25px;
+  }
+}

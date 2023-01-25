@@ -7,12 +7,12 @@ import { Step, step_list } from "./Step";
 export default function HowItWorks() {
   const steps = step_list;
   return (
-    <div className="how-it-works-container">
-      <h2>How It Works</h2>
+    <div className="how-it-works-container section-container">
+      <h2 className="alternate-section-title">How It Works</h2>
       {steps.map((step, index) => {
         console.log(step);
         return (
-          <div>
+          <div className="step-container">
             <Step
               index={index + 1}
               title={step.title}
@@ -24,8 +24,9 @@ export default function HowItWorks() {
           </div>
         );
       })}
-
-      <Button value="Get in touch" page="/contact" />
+      <div className="how-button">
+        <Button value="Get in touch" page="/contact" />
+      </div>
     </div>
   );
 }

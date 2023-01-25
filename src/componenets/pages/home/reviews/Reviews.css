@@ -1,0 +1,13 @@
+.review-container-full {
+  padding-bottom: 40px;
+}
+
+.review-container-full h2 {
+  margin-bottom: 0;
+}
+
+.reviews-image {
+  height: 130px;
+  width: auto;
+  padding-top: 40px;
+}

@@ -1,0 +1,56 @@
+.quote-header-container {
+  background-image: url("../../../assets/ins3.png");
+  /* background-image: url("../../../../assets/ins3.png"); */
+}
+
+.quote-header-info {
+  padding: 50px 100px 100px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* width: 50%; */
+}
+
+.quote-header-info h1 {
+  margin: 0;
+}
+
+.quote-header-info div {
+  width: 50%;
+}
+
+.quote-header-info p {
+  margin-bottom: 40px;
+  /* width: 100%; */
+}
+
+.quote-page-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 100px;
+}
+
+.quote-page-section-container h2 {
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+.quote-page-section-container .question-small {
+  color: var(--dark-blue);
+}
+
+.quote-disc {
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .quote-header-info div {
+    width: 100%;
+  }
+
+  .quote-header-info,
+  .quote-page-section-container {
+    padding: 40px 25px;
+  }
+}

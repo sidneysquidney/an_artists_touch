@@ -1,0 +1,95 @@
+.quotebar-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* padding-bottom: 40px; */
+}
+
+#middle-box {
+  border-right: none;
+  border-left: none;
+}
+
+.quotebar-button {
+  padding: 10px;
+  background-color: var(--aqua-blue);
+  width: 260px;
+  transition: var(--transition-time);
+}
+
+@media only screen and (max-width: 1050px) {
+  .quotebar-box,
+  .quotebar-button {
+    width: 500px;
+  }
+
+  .quotebar-box,
+  #middle-box {
+    border: 1px solid var(--border-grey);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .quotebar-box,
+  .quotebar-button {
+    width: 100%;
+  }
+}
+
+.quotebar-box {
+  background-color: white;
+  border: 1px solid var(--border-grey);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.quotebar-box input {
+  border: none;
+  margin-left: 10px;
+}
+
+.quotebar-button:hover button,
+.quotebar-button:hover {
+  background-color: var(--turquoise);
+}
+
+.quotebar-button button {
+  background-color: var(--aqua-blue);
+  border: none;
+  transition: var(--transition-time);
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+}
+
+.quotebar-button p {
+  display: inline;
+  color: white;
+}
+
+.quote-estimate {
+  padding: 20px 0px;
+}
+
+.quote-number-bold {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.float-right {
+  margin-left: 10px;
+}
+
+.inline-text {
+  display: inline;
+}
+
+#blue-background,
+#blue-background button {
+  background-color: var(--turquoise);
+}
+
+#blue-background:hover,
+#blue-background:hover button {
+  background-color: var(--turquoise2);
+}

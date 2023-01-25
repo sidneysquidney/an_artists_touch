@@ -1,0 +1,39 @@
+.home-quote-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 100px;
+  /* border: 1px solid red; */
+}
+
+.quote-title {
+  width: 700px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1040px) {
+  .quote-title {
+    width: 100%;
+  }
+}
+
+.quote-top-icons svg {
+  color: white;
+  /* padding: 10px; */
+  width: 25px;
+  height: 25px;
+  margin: 0px 10px;
+}
+
+.question-small {
+  width: 10px;
+  height: 10px;
+  color: white;
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .home-quote-container {
+    padding: 40px 25px;
+  }
+}

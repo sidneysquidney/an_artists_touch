@@ -10,11 +10,13 @@ export default function ContactHeader() {
         <h2>Phone</h2>
         <ul>
           <li>
+            <p>London: </p>
             <a href="tel:01761435656" className="dark-blue-hover">
-              01761 435656
+              07903 650715
             </a>
           </li>
           <li>
+            <p>Bath: </p>
             <a href="tel:07847586453" className="dark-blue-hover">
               07847 586453
             </a>

@@ -15,7 +15,7 @@ function QuoteGenerator(props) {
   return (
     <div>
       <form>
-        <label htmlFor="small-windows-field">Number of small windows:</label>
+        <label htmlFor="small-windows-field">Small windows:</label>
         <input
           id="small-windows-field"
           type="number"
@@ -24,7 +24,7 @@ function QuoteGenerator(props) {
           value={windows}
           onChange={(e) => setWindows(e.target.value)}
         />
-        <label htmlFor="big-windows-field">Number of big windows:</label>
+        <label htmlFor="big-windows-field">Big windows:</label>
         <input
           id="big-windows-field"
           type="number"
@@ -33,7 +33,7 @@ function QuoteGenerator(props) {
           value={bigWindows}
           onChange={(e) => setBigWindows(e.target.value)}
         />
-        <label htmlFor="nooks-field">Number of nooks and crannys:</label>
+        <label htmlFor="nooks-field">Hard to reach windows</label>
         <input
           id="nooks-field"
           type="number"

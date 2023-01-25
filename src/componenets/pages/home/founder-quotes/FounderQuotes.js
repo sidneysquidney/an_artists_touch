@@ -51,7 +51,7 @@ function FounderQuotes() {
 
   return (
     <div className="founder-container-full">
-      <h2 className="alternate-section-title">FounderQuotes </h2>
+      <h2 className="alternate-section-title">Quotes from the founders</h2>
       <Slider quotes={quotes} buttonClick={buttonClick} />
       <SliderDots quoteCount={quotes.length} />
     </div>
@@ -78,7 +78,7 @@ function Slider(props) {
   };
 
   return (
-    <div className="slide-buttons-container">
+    <div className="slide-buttons-container section-container">
       <LeftArrow buttonClick={buttonClick} />
       <div className="slide-container">
         <div className="slide-section">

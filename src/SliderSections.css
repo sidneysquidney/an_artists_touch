@@ -85,15 +85,33 @@
 /* musician profiles */
 
 .profile-picture {
-  width: 400px;
-  height: 600px;
+  width: 320px;
+  height: 490px;
 }
 
 .profile-container {
   display: flex;
+  /* border: 1px solid red; */
 }
 
 .profile-picture-container,
 .profile-text-container {
   width: 50%;
+}
+
+/* .profile-picture-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+
+.profile-text-container h2 {
+  margin: 0;
+}
+
+.profile-text-container svg {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  margin-top: 10px;
 }

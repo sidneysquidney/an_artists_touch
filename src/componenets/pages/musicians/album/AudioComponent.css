@@ -1,0 +1,34 @@
+.rhap_time {
+  font-size: 12px;
+  color: var(--dark-blue);
+  font-weight: 400;
+  font-family: "Poppins";
+}
+
+.rhap_button-clear {
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rhap_container {
+  box-shadow: none;
+}
+
+/* .rhap_main-controls-button {
+  color: var(--dark-blue);
+}
+
+.rhap_progress-indicator,
+.rhap_progress-filled {
+  background-color: var(--dark-blue);
+} */
+
+/* .rhap_progress-bar {
+  background-color: var(--border-grey);
+} */
+
+/* 400
+12
+poppins */

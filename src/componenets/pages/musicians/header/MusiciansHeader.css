@@ -1,0 +1,33 @@
+.musicians-header-container {
+  background-image: url("../../../../assets//dg3o.png");
+}
+
+.musicians-header-info {
+  padding: 50px 100px 100px 100px;
+  display: flex;
+  justify-content: flex-end;
+  /* width: 50%; */
+}
+
+.musicians-header-info h1 {
+  margin: 0;
+}
+
+.musicians-header-info div {
+  width: 50%;
+}
+
+.musicians-last-p {
+  margin-bottom: 40px;
+  /* width: 100%; */
+}
+
+@media only screen and (max-width: 1024px) {
+  .musicians-header-info div {
+    width: 100%;
+  }
+
+  .musicians-header-info {
+    padding: 40px 25px;
+  }
+}
