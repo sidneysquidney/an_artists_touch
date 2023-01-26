@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5f302670.css",
+    "main.js": "/static/js/main.bdafce19.js",
+    "static/media/mole_cleaning.jpg": "/static/media/mole_cleaning.83e78302bd1bb0c0bf35.jpg",
+    "static/media/guitar_window2.jpg": "/static/media/guitar_window2.aa2e07fc36518a52f099.jpg",
+    "static/media/guitar_window3.jpg": "/static/media/guitar_window3.20e9892e1196fec7d4e5.jpg",
+    "static/media/samba.mp3": "/static/media/samba.c49b980afa2c3b17a540.mp3",
+    "static/media/bach.mp3": "/static/media/bach.c0e59598d75ce4a64335.mp3",
+    "static/media/peru.mp3": "/static/media/peru.ef6370d86836b19fe019.mp3",
+    "static/media/downland.mp3": "/static/media/downland.c5c6e083426c12c0c372.mp3",
+    "static/media/ins3.png": "/static/media/ins3.7b042ebfaef682ab2250.png",
+    "static/media/maybe.mp3": "/static/media/maybe.190be20ba8a8c2b3a097.mp3",
+    "static/media/cry.mp3": "/static/media/cry.c711bdb564cca7e51bdb.mp3",
+    "static/media/windowssquare.png": "/static/media/windowssquare.2c4c00fc05718ecac267.png",
+    "static/media/dg3o.png": "/static/media/dg3o.5b4f24b9674a738441ad.png",
+    "static/media/handofgod.png": "/static/media/handofgod.9ee1c9298e812d869a54.png",
+    "static/media/harold1edit.jpg": "/static/media/harold1edit.1e4c30fd038354589452.jpg",
+    "static/media/dg2edit.jpg": "/static/media/dg2edit.f5e7c87a935743245f56.jpg",
+    "static/media/insolaceedit.jpg": "/static/media/insolaceedit.1d7728672dd4c1cd8475.jpg",
+    "static/media/reviews.png": "/static/media/reviews.88c24d96dfca6db444fe.png",
+    "static/media/windows_logo.jpeg": "/static/media/windows_logo.c499abd004289927669a.jpeg",
+    "static/media/abbey_road.jpeg": "/static/media/abbey_road.807e9e757ff09f05931f.jpeg",
+    "index.html": "/index.html",
+    "main.5f302670.css.map": "/static/css/main.5f302670.css.map",
+    "main.bdafce19.js.map": "/static/js/main.bdafce19.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5f302670.css",
+    "static/js/main.bdafce19.js"
+  ]
+}

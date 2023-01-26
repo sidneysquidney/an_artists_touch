@@ -2,6 +2,11 @@
   "name": "an_artists_touch",
   "version": "0.1.0",
   "private": true,
+  "main": "server.js",
+  "engines": {
+    "npm": "8.19.2",
+    "node": "18.12.1"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
