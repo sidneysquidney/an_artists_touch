@@ -9,12 +9,15 @@ function Reviews() {
 
   const reviews = [
     {
-      quote:
-        "They say eyes are the windows to the soul. That means windows are the eyes of the house... and who wants dirt in their eyes!",
-      author: "Harold Gordon-Smith",
+      quote: "Prompt, professional, and a fantastic clean.",
+      author: "Nathalie Spoons",
     },
-    { quote: "review2", author: "reviewer2" },
-    { quote: "review3", author: "author3" },
+    { quote: "Good price, good job. Thanks guys", author: "Kabir Collins" },
+    {
+      quote:
+        "I only have my windows cleaned in the traditional style. I can confirm that the service was brilliant with, dare I say it, 'An Artist's Touch' finish.",
+      author: "Lina May",
+    },
   ];
 
   const updateSliderDots = (index, previousIndex) => {

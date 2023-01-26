@@ -1,9 +1,6 @@
 import pic1 from "./assets/guitar_window3.jpg";
 import pic2 from "./assets/harold1edit.jpg";
 import pic3 from "./assets/insolaceedit.jpg";
-import song1 from "./assets/song1.mp4";
-import song2 from "./assets/song2.mp4";
-import song3 from "./assets/song3.mp4";
 
 import cry from "../../../../assets/audio/cry.mp3";
 import maybe from "../../../../assets/audio/maybe.mp3";
