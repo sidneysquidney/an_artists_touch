@@ -1,5 +1,8 @@
 import ContactLocation from "../contact-location/ContactLocation";
 import Line from "../line/Line";
+import { FaFacebook, FaInstagram, FaPhone, FaEnvelope } from "react-icons/fa";
+
+import "./Footer.css";
 
 import { Link } from "react-router-dom";
 
@@ -8,11 +11,11 @@ import "react-h5-audio-player/lib/styles.css";
 
 import React, { useState, useEffect, useRef } from "react";
 import import_tracks from "../../pages/musicians/album/tracks";
-import album_cover from "../../pages/musicians/album/assets/windows_logo.jpeg";
+// import album_cover from "../../pages/musicians/album/assets/windows_logo.jpeg";
 
-import { FaFacebook, FaInstagram, FaPhone, FaEnvelope } from "react-icons/fa";
-
-import "./Footer.css";
+// import album_cover from "../../../assets/windows_logo.jpeg";
+const album_cover =
+  "https://lh3.googleusercontent.com/mypQYIWK1KKKpqkUjnpQTScWm_51sPL-dXDuyDQuJE2GTsfNy4BkSyxh6GnboYZPcKKw87mktxbYRzxw71G3CJTG8NR8ixQrZEXX9aHvgmdytebOFfJiANlNJMLZnYl7OQql6d1CVH3ILY18kYO0whYXnwkv5eagd9ipqN69RYm_xd6hFfnGS9ahcVSI88VQeVd2zNh1z1qavLU_oQJDJcu6MyZjP0cWe5dH_ANO0l0bADoFKxrSS8CVmSVJLOwXRnAlcpUkmgtXaabTqukz7blpwk18NeXbFvmJARulReDKV0n5ctmaUm9LmtJiEr49L_8zxdNfwvt0Wf6JPGBvkhRAlgmAAbJj5ddbAT21qVBM7RonlyqhFQt8kiicgbxsnUx9C1ElBaKwhLT5U2LC4ouhl5GuZ8WnBSnjzmOxQx9jpmzREpyDy9jJlw-kvZBrv-FzDNnNQIHCfa68k55Pg8SNwaXBP9chjctKo71Qw-khw9opKjfiS3IRlKX3nFUdHtPUKBca82VcS-9WedKeKLOXrih1iDdhko24cJ3Jip1AStWRBRpinyqPcB91jzQzUyyPYLVjk-O9q8WAOtoH2qDwmpPzNkcKQAzKo_zfQu-co8E5Z497LZPY25nP9IatIcPWQn9oalkO_vx-S__nLNOhhILajWVJJ65WConl8X73vtJYLrC5HmqKlq4zy7Tk8ufvEkird4Yb_z51PG_RADoTTgajMm53veuacnV4Ra8l1DhKGoxQABdYmGUIsX48TIT635R-Yepz80B83XhaoyRK0-UvK0l3DDJtDdicZmj3pTXNv18-IO04b7gwp3CU5oNlzJSDFDOrvBDxPrbEd3QJIFe_Knb4Wbb_DnFZagyXW7YQG9W0gyMBqGA3MMuue_Z5hLvA_ChLs2oHrNTzVAkDYGA6NDV7w1hn7RDgJBY5Ve7z=w311-h297-no?authuser=0";
 
 export default function Footer(props) {
   return (

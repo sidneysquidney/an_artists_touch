@@ -1,6 +1,3 @@
-import mole_cleaning from "../../../../assets/mole_cleaning.jpg";
-import guitar_window from "../../../../assets/guitar_window2.jpg";
-
 import "./Services.css";
 
 export default function Services() {
@@ -23,14 +20,7 @@ export default function Services() {
           <li>Music Lessons</li>
         </ol>
       </div>
-      <div className="services-two">
-        {/* <img
-          src={guitar_window}
-          alt="Abbey Road Window Cleaners"
-          // width="500"
-          // height="300"
-        ></img> */}
-      </div>
+      <div className="services-two"></div>
     </div>
   );
 }

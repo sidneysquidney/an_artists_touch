@@ -2,7 +2,9 @@ import { useState } from "react";
 import { useEffect } from "react";
 
 import "./Reviews.css";
-import reviews_image from "../../../../assets/reviews.png";
+// import reviews_image from "../../../../assets/reviews.png";
+const reviews_image =
+  "https://lh3.googleusercontent.com/aOrhyXheyMSZ12OZmvWIo5wh5oOxiv_xFOVJABK7qIiqW7ZX5Ww6P2ALmcJeezLwbI5yyig_-LOadArfzII0ZdnS9bARi1XVtoLLech1a6aHmVnY8xGK8amkXY-L06QcQScHeST-CTmzmGb81e1_xlOIwsxVzuMpeSsU4UcaFCzoENzk8nGl9kKjmEBeVzlKiQ37AoSc3o2u2M75g3cmyKnjKS_PV25HT_YvZ1CpyC6S_FDzYTLxhgtH-F6bc0Vq5cp2r8m7FoLlt-5PttmmznzDfvHaaabayne0FHG7nDrbvsCZ0T8WdMjwutkFLUVKesK-eROx3_bQE2_OoY5hOp2JRyYiwHRm8UwXwdYjJLAQHGZcLxOBB_t38aZoW7vFRHujw7OQXDprdGdjFvy1-f9riD_VHKE-FG978Yo1FwbFhjvrfo_N3m8NDx9SkbUhl6KAYncU67O9RG-ooitmoYBsAOtEbk-TnbUpvjKOgFa4TBjoys2s5H9mjnLC9_-rZTasjO10T9NGJlSZNqzkCkK2JRlts5aVgMjxZuWstqAE_v5Xfh7JKi045rkRERvyiKVcNFZWwxJkcHOLMgJeUs8WaDIbxBjArvU4OvxmUqsGO0Dl-lGn1GuCPQLz9zGztUldZGGTmI1vqab5IdmkGpRSVR_7yCyox35H0Pz0Hg9OEo8M5qQi3lAImykJpKSj-MA6AX9jPNeK9HuZw5G0rTJPXYYBXDaN95N1DXo1nP-QkOexIyjg6CCImhro5uHXhIby56G0gUcViyLtk6X0kKpNlV7lxuaUQtWDJgz04HTp1-ZBRfAyTd_wtoCFofIOV_iQVaEAkeLJVvu6FSMgNS_hMNW3O8RJjLDkqSOlzRzR4GIm0ggCiIk3zAGZddM3lt5cyybURbjQWGO7xM04DgiraSQeX_td6Z1h-btdfJlggOXT=w742-h248-no?authuser=0";
 
 function Reviews() {
   const [index, setIndex] = useState(0);

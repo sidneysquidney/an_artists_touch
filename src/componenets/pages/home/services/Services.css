@@ -23,7 +23,8 @@
 .services-two {
   /* flex: 2; */
   width: 60%;
-  background-image: url("../../../../assets/guitar_window2.jpg");
+  /* background-image: url("../../../../assets/guitar_window2.jpg"); */
+  background-image: url("https://lh3.googleusercontent.com/IArlFeKMOgyt21tLIWEuzjpzXIyk0KcV1QcHhS7_Wpn94crauvk4Dx1Lhp2baLtlZ-mGJ-F7QwoS5-XNKPvNQKCiRNXgoneKP8vcOJGeWsFcmiAAQB8gIOVbcL639jgFCB1_6BleklSHJaacOPDqm1_sWT72fvoZWNhwuYfGhdmeMrPDixQdu7WyV2-t3RP2rrrdCNwn248UdDels_hbTcjfmryYOUmwhIxeMN21kgY_LjAkqnDgmg1SiMTftu58Gf--DAgzRygndABweGRNg97Bmx2UP-tFy426-lAgb05uKhHnC5_HL3pT1vWhtxj_7Il38L2Qq0svrEyxjf6FpQ4-DZgcOacJlff1sN1WeptUSVsGeiMDRfsgimxbpR90bsdh8PI0WJVnyeIFmH9pT2daHs8iTVy-ZiHtLnqpDEsIHK_lKQEmbYDRPm6IjcNGivm64nTFQ80HadliJOHT8ALsZce13aIFr865S-babCY6V0hXRKWyHoArx9cFxirq0rRGb9CgeDqGWLaQWvUABJCZbcBYMfdigJ8Mgx7-V5ssXIi0x81OLhm8a1coV4OjAbC0AZzwV03SDBUWandiNxKaTCYx5ZWtLS7yPbsWU28h-PoPJ44j_FMWHJMoaUZBYKZiXJFBFPb5lrVqHeuZys2jZVJ262fzzhAHkFUr2144FJjahhdbn7vMjcJhBVOTy4pacUWDDAK0QoAbHkewiP0LtxqzAE8RT_vV-pzh94NL8loTegK4XiZfjIABRIXYr5KIDjHDM4D0SZ1cNRhS0oa-gz8FAXoE_WzYv-48Z5qm6-nXj9geK47ehQZGzTJKkVm6KM0NZmWZya5JCKVxwQEZ9-8RAc6w9yYQE2RmjNGaRqNuu5H9r3gwPVJ5TaNn_LOHMkftKTnPnyLLfONYPY1JTJp7rUTjaMO0DjifvrAUC-x-=w2196-h1236-no?authuser=0");
   background-size: cover;
 }
 
