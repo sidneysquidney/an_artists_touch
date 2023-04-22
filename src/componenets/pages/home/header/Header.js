@@ -16,7 +16,10 @@ export default function Header() {
       <div className="section-container">
         <div className="header-top">
           <div className="header-top-one">
-            <h1>Treat your windows to “An Artists Touch”.</h1>
+            <h1>
+              Treat your windows to “An Artists Touch”. this is the simple
+              branch
+            </h1>
             <small className="header-small text-grey">
               Get your windows cleaned, and help an artist follow their dreams{" "}
             </small>
