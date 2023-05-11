@@ -18,11 +18,11 @@ function FounderQuotes() {
   const windowWidth = windowSize.current[0];
 
   const quotes = [
-    "They say eyes are the windows to the soul. That means windows are the eyes of the house... and who wants dirt in their eyes!",
-    "The wine of Divine Grace is limitless: all limits come only from the faults of the cup. Moonlight floods the whole sky from horizon to horizon; How much it can fill your room depends on its windows. Grant a great dignity, my friend, to the windows of your life; Love has designed it to see His eternal love.",
     "If the doors of perception were cleansed every thing would appear to man as it is, Infinite. For man has closed himself up, till he sees all things thro' narrow chinks of his winodws.",
+    "They say eyes are the windows to the soul. That means windows are the eyes of the house... and who wants dirt in their eyes!",
     "In the universe, there are things that are known, and things that are unknown, and in between, there are windows.",
     "Look outside. If you are distressed by something there, the pain is not due to the thing itself, but to your perception of it; and this you have the power to revoke at any moment, by cleaning your windows.",
+    "The wine of Divine Grace is limitless: all limits come only from the faults of the cup. Moonlight floods the whole sky from horizon to horizon; How much it can fill your room depends on its windows. Grant a great dignity, my friend, to the windows of your life; Love has designed it to see His eternal love."
   ];
 
   const sliderWidth = () => {
