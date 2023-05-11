@@ -72,7 +72,7 @@ export default function Footer(props) {
           <h3 className="footer-subtitle">Connect</h3>
           <ul className="footer-list">
             <li>
-              <a href="tel:07903650715" className="dark-blue-hover">
+              <a href="tel:07903650710" className="dark-blue-hover">
                 Phone
               </a>
             </li>
