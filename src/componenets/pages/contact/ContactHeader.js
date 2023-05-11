@@ -11,7 +11,7 @@ export default function ContactHeader() {
         <ul>
           <li>
             <p>London: </p>
-            <a href="tel:01761435656" className="dark-blue-hover">
+            <a href="tel:01761435650" className="dark-blue-hover">
               07903 650710
             </a>
           </li>
