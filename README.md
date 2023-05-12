@@ -2,7 +2,7 @@
 
 An Artist's Touch is a window cleaning company dedicated to supporting the arts.
 
-The website is built using Javascript, React, CSS, HTML, and can be run by cloning the repository and running 'npm start'. 
+The website is built using Javascript, React, CSS, HTML, and can be run by cloning the repository and running 'npm install', then 'npm start' in the directory.
 
 It includes an audio player, quote generator, quote and musician bio slider, and an interactive navigation bar. It has a responsive design for both mobile and desktop use.
 
